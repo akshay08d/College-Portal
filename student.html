@@ -1,0 +1,102 @@
+<?php session_start();
+?>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css" />
+  </head>
+  <body>
+   
+    <!-- Navigation -->
+
+    <div class="navbar">
+      <a href="student.html" class="home">Home</a>
+      <a href="Setting.html" class="setting">Setting</a>
+      <!-- <a href="#open" class="open">Open</a> -->
+      <a href="jobs.html" class="job_profiles">Job Profiles</a>
+      <a href="stu_logout.php" class="logout">Logout</a>
+    </div>
+    <div class="intro_box">
+      <div class="left_intro_box">
+        <div><?php echo($_SESSION['email']); ?></div>
+        <div><?php echo($_SESSION['gender']); ?></div>
+        <div><?php echo($_SESSION['course']); ?></div>
+        <div><?php echo($_SESSION['user_name']); ?></div>
+      </div>
+      <div width = " 2px"><img src="person_icon.jpg" alt="image" sizes="auto" style="width: 81px;
+        border-radius: 50px;"></div>
+      <div class="right_intro_box">
+        <!-- <div><?php echo($_SESSION['email']); ?></div>
+        <div><?php echo($_SESSION['gender']); ?></div>
+        <div><?php echo($_SESSION['course']); ?></div>
+        <div><?php echo($_SESSION['user_name']); ?></div> -->
+        <div>sem</div>
+        <div>cgpa</div>
+        <div>branch</div>
+        <div>back logs</div>
+      </div>
+    </div>
+
+
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Skill Level</th>
+          <th>Certification</th>
+          <th>Project</th>
+          <th>Technology Used</th>
+          <th>Project Description</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <?php
+      include("functions.php");
+    
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+      $dbname = "login_sample_db";
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // // Check connection
+      if ($conn->connect_error) { 
+        die("Connection failed: " . $conn->connect_error);
+      }
+      $sql = "SELECT * FROM student ";
+      $result =$conn->query($sql);
+      while($row=$result->fetch_assoc()){
+        echo ("<tr>
+          <td>".$row["skill"]."</td>
+          <td>".$row["skill_level"]."</td>
+          <td>".$row["certification"]."</td>
+          <td>".$row["project"]."</td>
+          <td>".$row["technology_used"]."</td>
+          <td>".$row["project_description"]."</td>
+          <td>".$row["email"]."</td>
+          
+        </tr>");
+      }
+       ?>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Footer -->
+    <!-- <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+  </footer> -->
+  </body>
+</html>
+

@@ -1,0 +1,82 @@
+<?php session_start();
+?>
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jobs.css">
+   </head>
+<!-- <style>
+table, th, td {
+  border:1px solid black;
+}
+</style> -->
+<body>
+    <div class="navbar">
+        <a href="student.html" class="home">Home</a>
+        <a href="Setting.html" class="setting">Setting</a>
+        <!-- <a href="#open" class="open">Open</a> -->
+        <a href="jobs.html" class="job_profiles">Job Profiles</a>
+        <a href="stu_logout.php" class="logout">Logout</a>
+      </div>
+
+
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Job Profile</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Response</th>
+            <th>Link</th>
+    
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <?php
+        include("functions.php");
+      
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "login_sample_db";
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // // Check connection
+        if ($conn->connect_error) { 
+          die("Connection failed: " . $conn->connect_error);
+        }
+        $sql = "SELECT * FROM jobs ";
+        $result =$conn->query($sql);
+        while($row=$result->fetch_assoc()){
+          echo ("<tr>
+            <td>".$row["job_profile"]."</td>
+            <td>".$row["company"]."</td>
+            <td>".$row["location"]."</td>
+            <td>".$row["status"]."</td>
+            <td><button onclick= \"location.href='apply.html'\">Apply</button></td>
+            <td>".$row["link"]."</td>        
+          </tr>");
+         
+        }
+         ?>
+          </tr>
+          
+        </tbody>
+      </table>
+
+
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+

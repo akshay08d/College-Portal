@@ -1,0 +1,119 @@
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    /* border: 3px; */
+    background-color: black;
+  }
+  .home{
+    color: azure;
+    text-decoration: none;
+  }
+  .profile{
+    color: azure;
+    text-decoration: none;
+  }
+  .open{
+    color: azure;
+    text-decoration: none;
+  }
+  .applied{
+    color: azure;
+    text-decoration: none;
+  }
+  .logout{
+    color: azure;
+    text-decoration: none;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    /* background: #e35869;*/
+    font-family: 'Rubik', sans-serif; 
+  
+    background-image: url('skills1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    /* color: #FFFFFF; */
+  }
+  
+  
+  
+  /* Bordered form */
+  form {
+      border: 3px solid #f1f1f1;
+    }
+    
+    /* Full-width inputs */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-family: 'Rubik', sans-serif;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+        background: rgb(189, 188, 188);
+        color: #777;
+        /* color: rgb(104, 104, 104); */
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    /* Add a hover effect for buttons */
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+    }
+    
+    /* The "Forgot password" text */
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+    .container{
+        /* border: .px solid black; */
+        border-radius: 5px;
+        margin-top: 30px;
+        margin-left: 300px;
+        margin-right: 515px;
+        background-color: #e8e9ec;
+        background: #e8e9ec;
+    }
+    .details_box{
+        
+    }

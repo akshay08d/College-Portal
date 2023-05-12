@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="create_job.css">
+  <style>
+    
+  </style>
+
+</head>
+<body>
+
+     
+<div class="navbar">
+  <a href="company.html" class="home">Home</a>
+  <a href="create_job.html" class="post_opening">Post Opening</a>
+  <!-- <a href="#open" class="open">Open</a> -->
+  <a href="applications.html" class="applications">Applications</a>
+  <a href="Clogout.php" class="logout">Logout</a>
+</div>
+
+  <form  action="create_job.php" method="post">
+    <div class="container">
+  
+      <p>Post an opening!!!</p>
+      <hr>
+  
+      <label for="jprofile"><b>Job Profile</b></label>
+      <input type="text" placeholder="Job Profile" name="jprofile" id="jprofile" required>
+
+      <label for="company"><b>Company</b></label>
+      <input type="text" placeholder="Company" name="company" id="company" required>
+
+      <label for="location"><b>Location</b></label>
+      <input type="text" placeholder="Location" name="location" id="location" required>
+      
+      <label for="status"><b>Status</b></label>
+      <input type="text" placeholder="Status" name="status" id="status" required>
+
+      <label for="jplink"><b>Job Profile Link</b></label>
+      <input type="text" placeholder="Job Profile Link" name="jplink" id="jplink" required>
+
+      <hr>
+      <button type="submit" class="registerbtn">Post :) </button>
+ 
+    </div>
+  </form>
+</body>
+</html>

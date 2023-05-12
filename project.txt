@@ -1,0 +1,19 @@
+comparison of multiple mL models in mental stress level prediction
+
+using multiple sensory stress datasets
+
+
+stress question dataset
+stress sensor dataset
+analysing which algo works best for which and why 
+furure - collecting data from smat wearables and question and then comparing 
+
+heart rate 
+slee
+
+
+
+analysis of sensorry and question data using multiple ML and deeplearning algorithms 
+
+
+ analysis of stress on sensory dataset and (perceived Stress Scale) PSS dataset using   ML and Deeplearning algorithm 

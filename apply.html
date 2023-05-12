@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="student.html" class="home">Home</a>
+    <a href="Setting.html" class="setting">Setting</a>
+    <!-- <a href="#open" class="open">Open</a> -->
+    <a href="jobs.html" class="job_profiles">Job Profiles</a>
+    <a href="stu_logout.php" class="logout">Logout</a>
+  </div>
+
+
+<form  action="apply.php" method="post">
+    <div class="container">
+      <label for="jprofile"><b>Job Profile</b></label>
+      <input type="text" placeholder="Job Profile" name="jprofile" id="jprofile" required>
+
+      <label for="company"><b>Company</b></label>
+      <input type="text" placeholder="Company" name="company" id="company" required>
+
+      <label for="location"><b>Location</b></label>
+      <input type="text" placeholder="Location" name="location" id="location" required>
+      
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="name" name="name" id="name" required>
+
+      <label for="college"><b>College</b></label>
+      <input type="text" placeholder="college" name="college" id="college" required>
+
+      <label for="course"><b>Course</b></label>
+      <input type="text" placeholder="course" name="course" id="course" required>
+      
+      <label for="cgpa"><b>cgpa</b></label>
+      <input type="text" placeholder="cgpa" name="cgpa" id="cgpa" required>
+
+      <hr>
+      <button type="submit" class="registerbtn">Submit</button>
+ 
+    </div>
+  </form>
+</body>
+</html>

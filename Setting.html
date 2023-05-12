@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="setting.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="student.html" class="home">Home</a>
+    <a href="Setting.html" class="setting">Setting</a>
+    <!-- <a href="#open" class="open">Open</a> -->
+    <a href="jobs.html" class="job_profiles">Job Profiles</a>
+    <a href="stu_logout.php" class="logout">Logout</a>
+  </div>
+
+  <form method="post" action="stu_setting.php">
+    <div class="container">
+      <h1>Skills</h1>
+      <!-- <p>Please fill in this form to create an account.</p> -->
+      <hr>
+  
+      <label for="skill" class="details_box"><b>Skill</b></label>
+      <input type="text" placeholder="Skill" name="skill" id="skill" required>
+
+      <label for="slevel" class="details_box"><b>Skill level</b></label>
+      <input type="text" placeholder="Skill level" name="slevel" id="slevel" required>
+
+      <label for="certification" class="details_box"><b>Certification</b></label>
+      <input type="text" placeholder="Certification" name="certification" id="certification" required>
+
+      <label for="project" class="details_box"><b>Project</b></label>
+      <input type="text" placeholder="Project" name="project" id="project" required>
+      
+  
+      <label for="techused" class="details_box"><b>Technology Used</b></label>
+      <input type="text" placeholder="Technology Used" name="techused" id="techused" required>
+  
+      <label for="pdesc" class="details_box"><b> Project Description</b></label>
+      <input type="text" placeholder=" Project description" name=" pdesc" id="pdesc" required>
+
+      <label for="email" class="details_box"><b> Email</b></label>
+      <input type="text" placeholder=" Email" name=" email" id="email" required>
+
+      <hr>
+      <button type="submit" class="registerbtn">Upload</button>
+    </div>
+  </form>
+</body>
+</html>
